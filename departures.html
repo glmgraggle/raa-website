@@ -145,7 +145,7 @@
         },
         async load() {
           try {
-            const res = await fetch('/data/departures.json?_=' + Date.now()); // cache-bust
+            const res = await fetch('data/departures.json?_=' + Date.now()); // cache-bust
             const data = await res.json();
             this.flights = data.departures || [];
           } catch (e) {
