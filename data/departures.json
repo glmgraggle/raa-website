@@ -1,5 +1,15 @@
 {
-  "departures": [],
+  "departures": [
+    {
+      "airline": "ACA",
+      "flight": "ACA001",
+      "route": "YMML \u2192 YSSY",
+      "time": "08:30",
+      "gate": "15",
+      "aircraft": "A320",
+      "status": "\ud83d\udfe2 ON TIME"
+    }
+  ],
   "live_flight": null,
-  "updated": "2026-09-04T08:58:11.897054+00:00"
+  "updated": "2026-09-06T07:56:45.792523+00:00"
 }
