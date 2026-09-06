@@ -8,8 +8,17 @@
       "gate": "15",
       "aircraft": "A320",
       "status": "\ud83d\udfe2 ON TIME"
+    },
+    {
+      "airline": "ACA",
+      "flight": "ACA123",
+      "route": "AIRPORT1 \u2192 AIRPORT2",
+      "time": "8:30",
+      "gate": "1",
+      "aircraft": "plen",
+      "status": "\ud83d\udfe2 ON TIME"
     }
   ],
   "live_flight": null,
-  "updated": "2026-09-06T07:56:45.792523+00:00"
+  "updated": "2026-09-06T07:57:31.960000+00:00"
 }
