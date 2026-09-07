@@ -109,7 +109,7 @@
               </p>
               <p class="text-sm text-zinc-500 dark:text-zinc-400" x-text="f.route"></p>
               <p class="text-sm mt-1">
-                <span x-text="f.time"></span> · Gate <span x-text="f.gate"></span> · <span x-text="f.status"></span>
+                <span x-text="formatLocal(f.departure_unix)"></span> · Gate <span x-text="f.gate"></span> · <span x-text="f.status"></span>
               </p>
             </div>
           </template>
@@ -156,6 +156,14 @@
         }
       }
     }
+
+    function formatLocal(unix) {
+  if (!unix) return '';
+  return new Date(unix * 1000).toLocaleString(undefined, {
+    weekday: 'short', month: 'short', day: 'numeric',
+    hour: 'numeric', minute: '2-digit', timeZoneName: 'short'
+  });
+}
   </script>
 
 </body>
